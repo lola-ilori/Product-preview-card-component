@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+img {
+   max-width: 100%;
+}
+
+div, h1, h2, p {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: hsl(30, 38%, 92%);
+   min-height: 100vh;
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif  ;
+   color: hsl(228, 12%, 48%);
+   padding:1em 0;
+}
+
+.main__img {
+   display: block;
+}
+
+.main__img--desktop {
+   display: none;
+}
+
+.main {
+   background-color: hsl(0, 0%, 100%);
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.main__content {
+   width: 85%;
+   margin: 2em auto;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.main__category {
+   font-weight: 600;
+   font-size: 1rem;
+   letter-spacing: 7px;
+   color: hsl(228, 17%, 59%);
+   margin-bottom: 0.8em;
+}
+
+.main__title {
+   font-family: 'Fraunces' , sans-serif;
+   font-size: 2.5rem;
+   color: hsl(212, 21%, 14%);
+   margin-bottom: 0.6em;
+}
+
+.main__desc {
+   line-height: 1.5;
+   font-size: 1.1rem;
+   margin-bottom: 1.3em;
+   word-spacing: 2px;
+}
+
+.prices {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1.2em;
+}
+
+.new-price {
+   color: hsl(158, 36%, 37%);
+   font-weight: 700;
+   font-size: 2.5rem;
+   font-family: 'Fraunces' , sans-serif;
+   margin-right: 0.8em;
+}
+
+.old-price {
+   font-size: 1.2rem;
+   text-decoration: line-through;
+}
+
+.cart-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   background-color: hsl(158, 36%, 37%);
+   border: none;
+   padding: 1.2em 0.5em;
+   border-radius: 10px;
+   font-size: 1.2rem;
+   color: #fff;
+   cursor: pointer;
+   transition: background-color 0.2s ease;
+}
+
+.cart-icon {
+   margin-right: .8em;
+   width: 20px;
+}
+
+.cart-button:hover {
+   background-color: hsl(158, 42%, 18%);
+}
+
+.attribution { 
+   font-size: 0.8rem; 
+   text-align: center; 
+   margin-top: 1em;
+}
+
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width:650px) {
+   .main__img--mobile {
+      display: none;
+   }
+
+   .main__img--desktop {
+      display: block;
+   }
+
+   .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      max-width: 750px;
+      margin: 0 auto;
+      width: 100%;
+   }
+
+   .container {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+   }
+
+   .content--holder {
+     width: 80%;
+     margin: 0 auto;
+}
+
+.main__desc, .main__title, .prices, .main__category {
+   margin: 0;
+}
+}
